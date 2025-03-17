@@ -1,7 +1,9 @@
 **Prompt**
+
 What is an important skill to have for software engineering not related to language or programming knowledge?
 
 **Response**
+
 One of the most important non-technical skills for software engineering is **problem-solving**. Software development is fundamentally about solving problems, whether it’s designing efficient algorithms, debugging code, optimizing performance, or architecting scalable systems. Strong problem-solving skills allow engineers to analyze issues, break them down into manageable parts, and find effective solutions.
 
 Other essential non-technical skills include:
