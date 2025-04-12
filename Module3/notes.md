@@ -24,3 +24,32 @@ Access Modifiers
 - Private: Cannot be accessed from any other class except the class in which it is defined in.
 - Internal: Used to limit the access to the elements of the class only to files from the same assembly
 - Protected: The type or member can be accessed only by code in the same class or in a class that is derived from that class.
+
+## Operators
+- Ternary Operator: ```condition ? trueScope : falseSCope;```
+
+- Null Coalescing Operator
+  - Conditionally evaluate an expression and provide a fallback value in the event the expression is null
+  - Syntax:
+    ```var exampleValue = possiblyNullValue ?? some DefaultValue;```
+
+- Null-Conditional Operator
+  - Applies an operation to its operand only if that operand is non-null
+  - Otherwise, the result of applying the operator is null
+  - Example 1
+    - Using conditional operator and non-null value:
+      ```myList``` has been instantiated properly and is not null, so the operation is successful and ```myString``` will be added to ```myList```
+        ```csharp
+        List<string> myList = new List<string>();
+        myList?.Add("myString");
+        ```
+
+  - Example 2
+    - Using conditional operator and null value:
+      ```myList``` has a ```null``` value, so the operation will not execute, and ```myString``` will not be added to ```myList```
+        ```csharp
+        List<string> myList = null;
+        myList?.Add("myString");
+        ```
+ - The null conditional operator is used as a verification process. It will only execute an operation if the code is properly set up. Essentially, it acts as a null check at run-time.
+ 
